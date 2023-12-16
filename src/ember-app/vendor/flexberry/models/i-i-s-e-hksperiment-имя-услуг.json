@@ -1,0 +1,54 @@
+﻿{
+  "name": "IISEHksperimentИмяУслуг",
+  "modelName": "i-i-s-e-hksperiment-имя-услуг",
+  "className": "ИмяУслуг",
+  "nameSpace": "IIS.EHksperiment",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "наименование",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "ИмяУслугE",
+      "modelName": "i-i-s-e-hksperiment-имя-услуг",
+      "attrs": [
+        {
+          "name": "наименование",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "ИмяУслугL",
+      "modelName": "i-i-s-e-hksperiment-имя-услуг",
+      "attrs": [
+        {
+          "name": "наименование",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

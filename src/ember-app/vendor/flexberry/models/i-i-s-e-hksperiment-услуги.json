@@ -1,0 +1,60 @@
+﻿{
+  "name": "IISEHksperimentУслуги",
+  "modelName": "i-i-s-e-hksperiment-услуги",
+  "className": "Услуги",
+  "nameSpace": "IIS.EHksperiment",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "прайс",
+      "relatedTo": "i-i-s-e-hksperiment-прайс",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "УслугиE",
+      "modelName": "i-i-s-e-hksperiment-услуги",
+      "attrs": [],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "УслугиL",
+      "modelName": "i-i-s-e-hksperiment-услуги",
+      "attrs": [],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Прайс",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "цена",
+              "caption": "Цена",
+              "hidden": false,
+              "index": 0
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Цена",
+          "name": "прайс",
+          "relatedTo": "i-i-s-e-hksperiment-прайс",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}
